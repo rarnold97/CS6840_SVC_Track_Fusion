@@ -1,0 +1,158 @@
+{
+	"folders": [
+		{
+			"path": "..",
+			"name": "final_project"
+		},
+		{
+			"path": "C:/Users/rarnold/OneDrive - Radiance Technologies, Inc/WSU/CS6840_intro_to_machine_learning/example_code",
+			"name": "example_code"
+		}
+	],
+	"settings": {
+		"python.analysis.extraPaths":[
+			"${workspaceFolder:final_project}"
+		],
+		"python.defaultInterpreterPath": "C:/working/workspaces/WSU/wsu_venv/Scripts/python.exe",
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#2f7c47",
+			"activityBar.background": "#2f7c47",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#422c74",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"commandCenter.border": "#e7e7e799",
+			"sash.hoverBorder": "#2f7c47",
+			"statusBar.background": "#215732",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#2f7c47",
+			"statusBarItem.remoteBackground": "#215732",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#215732",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#21573299",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#215732"
+	},
+
+	"launch":{
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "(Python): Simulate Orbits",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/data_generation/simulate_orbits.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): test SVM Model",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/shallow_learning/ml_models.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): test cesium packets",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/visual/cesium_interface.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): test data format",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/data_generation/format_data.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): plot scatter",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/visual/plot_intersections.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): load dataset",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/shallow_learning/data_loader.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): LEARN",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/shallow_learning/ml_models.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): Plot Results",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/visual/plot_results.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"}
+			},
+			{
+				"name": "(Python): Main",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/project_entry/__main__.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"},
+				"justMyCode": false
+			}
+		],
+		"compounds": []
+	},
+
+	"tasks": {
+		"version": "2.0.0",
+		"presentation": {
+			"echo": false,
+			"reveal": "always",
+			"focus": "dedicated",
+			"showReuseMessage": true
+		},
+		"tasks" : [
+			{
+				"label": "(Cesium) Start",
+				"type": "shell",
+				"options": {
+					"cwd": "C:/software/Cesium"
+				},
+				"command": "npm",
+				"args": [
+					"start"
+				],
+				"problemMatcher": []
+			},
+			{
+				"label": "(Python) Jupyter Server",
+				"type": "process",
+				"command": "bash",
+				"args": ["${workspaceFolder:final_project}/jupyter/start_jupyter.sh"],
+				"problemMatcher": []
+			}
+		]
+		}
+}
