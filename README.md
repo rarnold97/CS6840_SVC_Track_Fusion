@@ -10,14 +10,6 @@ To distinguish the radar tracks, training data was passed into a SVC model that 
 
 An additional capability this project contains is the ability to export the satellite trajectories to a `czml` file, which can be rendered in a cesium project.
 
-![cesium1](https://user-images.githubusercontent.com/43557496/204717119-7ee7b4ff-af63-4ad0-bd80-6cf87592fe15.png)
-
-![classification_results](https://user-images.githubusercontent.com/43557496/204717034-f17e8f15-2778-4219-98e6-82c9817611b9.png)
-
-![CM_radar1](https://user-images.githubusercontent.com/43557496/204717244-dddbba92-4950-4cc5-b076-bc24dd6500e0.png)
-
-![CM_radar2](https://user-images.githubusercontent.com/43557496/204717262-be856363-055b-4e40-b313-76469eaa0155.png)
-
 ## Primary Packages
 - astropy
 - czml3

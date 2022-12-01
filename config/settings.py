@@ -12,7 +12,9 @@ __all__ = [
     "START_TIME", 
     "END_TIME",
     "NUM_TIMES",
-    "DO_ANALYSIS"
+    "DO_ANALYSIS",
+    "PLOT_WIDTH",
+    "PLOT_HEIGHT"
     ]
 
 PROJECT_ROOT = Path(__file__).parent.parent.resolve()
@@ -33,3 +35,6 @@ CROSS_END_TIME = START_TIME + 1 * units.min + 15 * units.s
 NUM_TIMES: int = 1000
 
 DO_ANALYSIS = True
+
+PLOT_WIDTH: int = 1000
+PLOT_HEIGHT: int = 1000

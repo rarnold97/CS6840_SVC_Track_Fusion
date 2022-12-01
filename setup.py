@@ -53,6 +53,7 @@ PACKAGE_LIST = (
     'w3lib==2.0.1',
     'webencodings==0.5.1',
     'zipp==3.11.0',
+    'tabulate==0.9.0'
 )
 
     

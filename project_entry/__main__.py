@@ -4,7 +4,7 @@ import sys
 import matplotlib.pyplot as plt
 
 from data_generation import SatelliteStates
-from shallow_learning.ml_models import learn
+from shallow_learning.ml_models import learn, final_result_analysis
 from data_generation import export_cesium
 from config.settings import DATA_PATH, DO_ANALYSIS
 from config import LOGGER
@@ -16,7 +16,8 @@ def run():
         if not czml_filename.is_file():
             export_cesium()
 
-        _ = learn()
+        final_result_analysis(*learn())
+        
         # execute show here to render confusion matrices
         plt.show()
 

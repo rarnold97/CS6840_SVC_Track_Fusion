@@ -6,10 +6,10 @@ shallow_learning/__pycache__
 visual/__pycache__
 *.log
 3rd_party
+jupyter
 .idea
 .ipynb_checkpoints
 data
 wheels
 *.egg-info
 build
-*.pyc
