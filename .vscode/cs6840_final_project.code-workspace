@@ -7,6 +7,14 @@
 		{
 			"path": "C:/Users/rarnold/OneDrive - Radiance Technologies, Inc/WSU/CS6840_intro_to_machine_learning/example_code",
 			"name": "example_code"
+		},
+		{
+			"path": "C:/Users/rarnold/OneDrive - Radiance Technologies, Inc/WSU/CS6840_intro_to_machine_learning/final_project/report",
+			"name": "report"
+		},
+		{
+			"path": "C:/Users/rarnold/OneDrive - Radiance Technologies, Inc/WSU/CS6840_intro_to_machine_learning/final_project/graphics",
+			"name": "graphics"			
 		}
 	],
 	"settings": {
@@ -116,6 +124,16 @@
 				"type": "python",
 				"request": "launch",
 				"program": "${workspaceFolder:final_project}/project_entry/__main__.py",
+				"console": "internalConsole",
+				"cwd": "${workspaceFolder:final_project}",
+				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"},
+				"justMyCode": false
+			},
+			{
+				"name": "(Python): PreProcess",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder:final_project}/shallow_learning/pre_process.py",
 				"console": "internalConsole",
 				"cwd": "${workspaceFolder:final_project}",
 				"env": {"PYTHONPATH": "${workspaceFolder:final_project}${pathSeparator}${env:PYTHONPATH}"},

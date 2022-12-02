@@ -79,7 +79,7 @@ def fit_svc(X_train: np.ndarray, y_train: np.ndarray, svc_cache_filename:Path) -
         params_grid = {'C': C_range, 'gamma': gammas,'kernel': ['rbf', 'sigmoid'],
                     'decision_function_shape':['ovo'], 'random_state': [RANDOM_STATE], 'probability': [True]}
         
-        ## :todo determine a proper scoring key
+        ## TODO: determine a proper scoring key
         grid_search = GridSearchCV(
             svm.SVC(),
             params_grid,
